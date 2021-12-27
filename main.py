@@ -37,7 +37,7 @@ def send_email():
 
 def open_random_file():
     digit = random.randint(1, 3)
-    with open(f"./letter_templates/letter_{digit}.txt") as template:
+    with open(f"./letter_{digit}.txt") as template:
         a = template.read()
         print(a)
         b = a.replace("[NAME]", new_dict[current_day][0])
